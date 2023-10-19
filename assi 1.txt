@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"welcome to india";
+	return 0;
+}
+______________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"hello world";
+	return 0;
+}
+_______________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"kajal"<<endl;
+	cout<<"arpita"<<endl;
+	cout<<"simran"<<endl;
+	cout<<"sonu"<<endl;
+	cout<<"kk"<<endl;
+	return 0;
+}
+_______________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"banana"<<endl;
+	cout<<"apple"<<endl;
+	cout<<"mango"<<endl;
+	cout<<"grapes"<<endl;
+	cout<<"gauva"<<endl;
+	return 0;
+}
+_______________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	cout<<"india"<<endl;
+	cout<<"japan"<<endl;
+	cout<<"bharat"<<endl;
+	cout<<"singhapur"<<endl;
+	cout<<"pak"<<endl;
+	return 0;
+}
+_________________________________________________
