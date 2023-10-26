@@ -1,0 +1,507 @@
+paramterised constructor : 
+1)
+a)two paramter :addition 
+
+b)two paramter :addition :data type : int ,float 
+
+b)two paramter :addition :data type : float,float 
+
+1)a)#include <iostream>
+using namespace std;
+class Addint {
+public:
+    int result;
+
+    Addint(int num1, int num2) {
+        result = num1 + num2;
+    }
+
+    void displayResult() {
+        cout << "Sum of integers: " << result << endl;
+    }
+};
+
+int main() {
+    Addint addition(5, 7); 
+    addition.displayResult();
+
+    return 0;
+}
+---------------------------------------------------------
+b)#include <iostream>
+using namespace std;
+
+class AddIntFloat {
+public:
+    float result;
+
+    AddIntFloat(int num1, float num2) {
+        result = num1 + num2;
+    }
+
+    void displayResult() {
+        cout << "Sum of int and float: " << result << endl;
+    }
+};
+
+int main() {
+    AddIntFloat addition(5, 3.5); 
+    addition.displayResult();
+
+    return 0;
+}
+-----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+class AddFloats {
+public:
+    float result;
+
+    AddFloats(float num1, float num2) {
+        result = num1 + num2;
+    }
+
+    void displayResult() {
+        cout << "Sum of floats: " << result << endl;
+    }
+};
+
+int main() {
+    AddFloats addition(3.5, 2.5);
+    addition.displayResult();
+
+    return 0;
+}
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+)two paramter :substraction
+
+b)two paramter :substraction:data type : int ,float 
+
+b)two paramter :substraction:data type : float,float 
+
+i)constant 
+
+
+
+ii)user input
+
+
+
+1)a)#include <iostream>
+using namespace std;
+class Subint {
+public:
+    int result;
+
+    subint(int num1, int num2) {
+        result = num2 -num1;
+    }
+
+    void displayResult() {
+        cout << "Sub of integers: " << result << endl;
+    }
+};
+
+int main() {
+   Subint subtraction(5, 7); 
+ Subtraction.displayResult();
+
+    return 0;
+}
+-------------------------------------------------------------------
+b)#include <iostream>
+using namespace std;
+
+class AddIntFloat {
+public:
+    float result;
+
+    AddIntFloat(int num1, float num2) {
+        result = num1 + num2;
+    }
+
+    void displayResult() {
+        cout << "Sum of int and float: " << result << endl;
+    }
+};
+
+int main() {
+    AddIntFloat addition(5, 3.5); 
+    addition.displayResult();
+return 0;
+}|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------
+#include <iostream>
+using namespace std;
+
+class SubFloats {
+public:
+    float result;
+
+    SubFloats(float num1, float num2) {
+        result = num2 - num1;
+    }
+
+    void displayResult() {
+        cout << "Sub of floats: " << result << endl;
+    }
+};
+
+int main() {
+    SubFloats subtraction(3.5, 2.5);
+    Subtraction.displayResult();
+
+    return 0;
+}
+
+
+--------------------------------------------------
+o return and no argument 
+add()
+sub()
+div()
+modu()
+multi()
+
+a)constant 
+b)user input 
+-------------
+ return and no argument 
+add()
+sub()
+div()
+modu()
+multi()
+
+
+
+
+
+#include<iostream>
+using namespace std;
+void cal();
+int main()
+{
+	cal();
+	return 0;
+}
+void cal(){
+	int a;
+	cout<<"enter a";
+	cin>>a;
+	int b;
+	cout<<"enter b";
+	cin>>b;
+	int u=a+b;
+	cout<<u;
+}
+_______________________________
+#include<iostream>
+using namespace std;
+void cal();
+int main()
+{
+	cal();
+	return 0;
+}
+void cal(){
+	int a;
+	cout<<"enter a";
+	cin>>a;
+	int b;
+	cout<<"enter b";
+	cin>>b;
+	int u=a-b;
+	cout<<u;
+}
+____________________________ 
+#include<iostream>
+using namespace std;
+void cal();
+int main()
+{
+	cal();
+	return 0;
+}
+void cal(){
+	int a;
+	cout<<"enter a";
+	cin>>a;
+	int b;
+	cout<<"enter b";
+	cin>>b;
+	int u=a/b;
+	cout<<u;
+}
+____________________________
+#include<iostream>
+using namespace std;
+void cal();
+int main()
+{
+	cal();
+	return 0;
+}
+void cal(){
+	int a;
+	cout<<"enter a";
+	cin>>a;
+	int b;
+	cout<<"enter b";
+	cin>>b;
+	int u=a%b;
+	cout<<u;
+}
+
+
+
+
+
+
+
+-------------------------------------------------
+swap1() => swap number code with third varaible 
+swap2()=> code without third variable 
+reverse() =>number reverse 
+pallindrome() =>logic pallindrome logic 
+prime() =>prime number logic 
+check() =>even ya odd number 
+factorial() =>factorial code 
+fibonacci() =>fibonacci 
+armstrong() =>armstrong code 
+gender() =>m =>male
+		f =female 
+ 		m /f k alava other 
+
+#include<iostream>
+using namespace std;
+void rev();
+int main()
+{
+	rev();
+	return 0;
+}
+void rev(){
+	int d;
+	cout<<"enter d";
+	cin>>d;
+	int m,n=0;
+	while(d>0)
+	{
+		m=d%10;
+		n=n*10+m;
+		d=d/10;
+	}
+		cout<<n;
+}
+_______________________________
+#include<iostream>
+using namespace std;
+void swap();
+int main()
+{
+	swap();
+	return 0;
+}
+void swap(){
+	int w;
+	cout<<"enter w";
+	cin>>w;
+	if(w==1)
+	{
+		int y=34,b=575,s;
+		s=b+y;
+		y=s-b;
+		b=s+y;
+		cout<<s<<endl<<b<<endl<<y;
+	}
+	if(w==2)
+	{
+		int f=66,p=997,d;
+		d=f*p;
+		p=f-d;
+		f=d+p;
+		cout<<d<<endl<<p<<endl<<f;
+	}
+	if(w==3)
+	{
+		int q=35,h=47,l;
+		l=q;
+		q=l-h;
+		h=l*q;
+		cout<<l<<endl<<q<<endl<<h;
+	}
+}
+_______________________________________________________________
+#include<iostream>
+using namespace std;
+void pall();
+int main()
+{
+	pall();
+	return 0;
+}
+void pall(){
+	int a;
+	cout<<"enter a";
+	cin>>a;
+	int temp=a;
+	int v,e=0;
+	while(a>0)
+	{
+		v=a%10;
+		e=e*10+v;
+		a=a/10;
+	}
+	if(e==temp)
+	{
+		cout<<"pall";
+	}
+	else{
+		cout<<"not pall";
+	}
+}
+______________________________________________________________
+#include<iostream>
+using namespace std;
+void prime();
+int main()
+{
+	prime();
+	return 0;
+}
+}
+void prime(){
+	int a;
+	cout<<"a";
+	cin>>a;
+	int b=2;
+	while(a>b)
+	{
+		if(a%b==0)
+		{
+			cout<<"not prime";
+			break;
+		}
+		if(b==a-1)
+		{
+			cout<<"prime";
+		}
+		 b++;
+	}
+}
+________________________________________________________________________
+#include<iostream>
+using namespace std;
+void even();
+int main()
+{
+	even();
+	return 0;
+}
+void even(){
+	int a;
+	cout<<"a";
+	cin>>a;
+    if(a%2==0)
+    {
+    	cout<<"even";
+	}
+	else{
+		cout<<"odd";
+	}
+}
+--------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void fact();
+int main()
+{
+	fact();
+	return 0;
+}
+void fact(){
+	int a;
+	cout<<"a";
+	cin>>a;
+	int b=1,c=1;
+	while(a>=c)
+	{
+		b=b*c;
+		c++;
+	}
+	cout<<b;
+}
+-------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+void arm();
+int main()
+{
+	arm();
+	return 0;
+}
+void arm(){
+	int a;
+	cout<<"a";
+	cin>>a;
+	int temp=a;
+	int b,c=0;
+	while(a>0)
+	{
+		b=a%10;
+		c=c+b*b*b;
+		a=a/10;
+	}
+	if(temp==c)
+	{
+		cout<<"arm";
+	}
+	else{
+		cout<<"not arm";
+	}
+}
+_________________________________________________________
+#include<iostream>
+using namespace std;
+void gender();
+int main()
+{
+	gender();
+	return 0;
+}
+void gender(){
+	char a;
+	cout<<"a";
+	cin>>a;
+	if(a=='m'||a=='M')
+	{
+		cout<<"male";
+	}
+	else if(a=='f'||a=='F')
+	{
+		cout<<"female";
+	}
+	else{
+		cout<<"other";
+	}
+}--------------------------------------------------------------------
+____________________________
