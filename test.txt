@@ -1,0 +1,281 @@
+Question 1: Tax Calculator
+Write a Java program that calculates income tax for individuals based on the following criteria:
+
+Income <= $10,000: No tax
+$10,001 - $30,000: 10% tax
+$30,001 - $50,000: 20% tax
+Income > $50,000: 30% tax
+
+Question 2: BMI Calculator
+Create a program that calculates the Body Mass Index (BMI) based on a person's weight and height. Categorize the BMI using the following ranges:
+
+BMI < 18.5: Underweight
+18.5 <= BMI < 24.9: Normal weight
+25 <= BMI < 29.9: Overweight
+BMI >= 30: Obesity
+
+
+Question 3: Leap Year Checker
+Write a Java program that checks if a given year is a leap year or not. Leap years are divisible by 4, but years divisible by 100 are not leap years unless they are also divisible by 400.
+
+
+
+Question 4: Time of Day Greeting
+Create a program that asks for the time of day (morning, afternoon, evening) and then greets the user accordingly. For example, "Good morning!" if the time is morning.
+
+
+
+Question 5: Menu Selection
+Design a simple restaurant menu system that takes a customer's choice (1-3) and displays the selected food item and its price. Use if-else if-else statements.
+
+
+Question 6: Temperature Converter
+Write a Java program to convert temperatures between Celsius and Fahrenheit. The program should ask the user for the input temperature and the unit (C or F) and provide the converted temperature.
+
+
+
+Question 7: Number Comparison
+Create a program that takes two numbers as input and uses if-else if-else statements to determine and print which number is greater or if they are equal.
+
+
+Question 8: Ticket Booking System
+Design a ticket booking system for a cinema that calculates the ticket price based on the age of the customer. Children (age < 12) get a 50% discount, while seniors (age >= 65) get a 30% discount.
+
+
+Question 9: Letter Grade Calculator
+Write a program that accepts a student's score as input and calculates their letter grade using if-else if-else statements. Consider the standard letter grading system (A, B, C, D, F).
+
+
+Question 10: Vowel or Consonant Checker
+Create a program that takes a single alphabet character as input and checks if it is a vowel (A, E, I, O, U) or a consonant.
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t;
+	cout<<"enter tax amount"<<t;
+	cin>>t;
+	if(t<=50000)
+	{
+		cout<<"no tax";
+	}
+	if(t<=40000&&t>=10006)
+	{
+		int f;
+		f=(t*110)/100;
+		cout<<"10 % tax"<<f;
+	}
+	if(t<=50000&&t>=30001)
+	{
+		int h;
+		h=(t*120)/100;
+		cout<<"20 % tax"<<h;
+	}
+	if(t>50000)
+	{
+		int i;
+		i=(t*130)/100;
+		cout<<"30 % tax"<<i;
+	}
+	return 0;
+}
+_________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int m;
+	cout<<"enter mass"<<m<<endl;
+	cin>>m;
+	int h;
+	cout<<"enter height"<<h<<endl;
+	cin>>h;
+	float b;
+	b=m/(h*h);
+	cout<<"BMI"<<b<<"kg/m2"<<endl;
+	if(b<18.5)
+	{
+		cout<<"Underweight";
+	}
+	if(b<24.9&&b>=18.5)
+	{
+		cout<<"Normal";
+	}
+	if(b<=29.9&&b>=25)
+	{
+		cout<<"Overweight";
+	}
+	if(b>30)
+	{
+		cout<<"Obesity";
+	}
+	return 0;
+}
+______________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+      char t;
+      cout<<"enter temperature"<<endl;
+      cin>>t;
+      if(t=='f')
+      {
+      	float a;
+      	cout<<"enter celcius"<<endl;
+      	cin>>a;
+      	float b=(a*1.8)+32;
+      	cout<<"fahrenhit temp"<<b<<endl;
+	  }
+	  if(t=='c')
+	  {
+	  	float d;
+	  	cout<<"enter farhenhit"<<endl;
+	  	cin>>d;
+	  	float e=(d-32)*0.55;
+	  	cout<<"celcius temp"<<e;
+	  }
+	  return 0;
+}
+_____________________________________________________________________________-
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"enter no 1"<<endl;
+	cin>>a;
+	int b;
+	cout<<"enter no 2";
+	cin>>b;
+	if(a>b)
+	{
+		cout<<"a is greater";
+	}
+	else if(a==b)
+	{
+		cout<<"both are equal";
+	}
+	else{
+		cout<<"b is greater";
+	}
+	return 0;
+}
+_______________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=400;
+	cout<<"ticket prize"<<a<<endl;
+	int b;
+	cout<<"enter age";
+	cin>>b;
+	if(b<12)
+	{
+		int d;
+		d=(a*0.5);
+		cout<<"discount prize for children"<<d;
+	}
+	if(b<=65&&b>12)
+	{
+		int e;
+		e=a*0.7;
+		cout<<"discount prize for adults"<<e;
+	}
+	return 0;
+}
+_______________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"enter physics marks"<<endl;
+	cin>>a;
+	int b;
+	cout<<"enter chemistry marks"<<endl;
+	cin>>b;
+	int c;
+	cout<<"enter english marks"<<endl;
+	cin>>c;
+	string name;
+	cout<<"Name of Student"<<endl;
+	cin>>name;
+	int d=((a+b+c)*100)/300;
+	cout<<"Percentage"<<d<<"%"<<endl;
+	if(d<30)
+	{
+		cout<<" Grade F";
+	}
+	else if(d<50&&d>=30)
+{
+		cout<<"Grade E";
+	}
+	else if(d<70&&d>=50)
+	{
+		cout<<"Grade D";
+	}
+   else	if(d<80&&d>=70)
+	{
+		cout<<"Grade C";
+	}
+	else if(d<85&&d>=80)
+	{
+		cout<<"Grade B";
+	}
+    else{
+    	cout<<"A grade";
+	}
+	return 0;
+}
+___________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	char s;
+	cout<<"Enter alphabet"<<endl;
+	cin>>s;
+	if(s=='A'||s=='E'||s=='I'||s=='O'||s=='U')
+	{
+		cout<<"Vowel";
+	}
+else{
+		cout<<"Consonent";
+	}
+	return 0;
+}
+_________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"Enter your choice ";
+	cin>>a;
+	if(a==1)
+	{
+		cout<<"Desert"<<endl<<" rasmalai   Rs 40"<<endl<<"Ice Cream   Rs 150"<<endl<<"Ice Tea    Rs 234"<<endl;
+	}
+	else if(a==2)
+	{
+		cout<<" Thalis"<<endl<<"special tahli Rs 500"<<endl<<"Gujarati Thali  300Rs"<<endl<<"Special Thali Rs 700";
+	}
+	else if(a==3)
+	{
+		cout<<"Fast Food"<<endl<<"Pav Bhaji  Rs 230"<<endl<<"Chole Bature  Rs 256"<<endl<<"Idli Sambhar Rs 450"<<endl;
+	}
+	else{
+		cout<<"Enter correct no";
+	}
+	return 0;
+}
+
+
