@@ -1,0 +1,104 @@
+parameterised : 
+a)no return and argument 
+b)return and argument 
+
+----------------------------
+no return :void 
+argument () =>parameter 
+
+---------------------------
+
+no return and  argument 
+addition : 
+----------------
+no return and  argument 
+add()
+#include<iostream>
+using namespace std;
+void cal(int a,int b);
+int main()
+{
+	cal(4,77);
+	return 0;
+}
+void cal(int a,int b){
+	int g=a+b;
+	cout<<g;
+}
+__________________
+sub()
+#include<iostream>
+using namespace std;
+void cal(int a,int b);
+int main()
+{
+	cal(85,45);
+	return 0;
+}
+void cal(int a,int b){
+	int c=a-b;
+	cout<<c;
+}
+---------------------------------------------------------
+div()
+#include<iostream>
+using namespace std;
+void cal(int a,int b);
+int main()
+{
+	cal(6,2);
+	return 0;
+}
+void cal(int a,int b){
+	int c=a/b;
+	cout<<c;
+}
+modu()
+#include<iostream>
+using namespace std;
+void cal(int a,int b);
+int main()
+{
+	cal(6,2);
+	return 0;
+}
+void cal(int a,int b){
+	int c=a%b;
+	cout<<c;
+}
+multi()
+#include<iostream>
+using namespace std;
+void cal(int a,int b);
+int main()
+{
+	cal(4,7);
+	return 0;
+}
+void cal(int a,int b){
+	int c=a*b;
+	cout<<c;
+}
+
+
+-------------
+ return and  argument 
+add()
+sub()
+div()
+modu()
+multi()
+
+o return and argument :
+swap1() => swap number code with third varaible 
+swap2()=> code without third variable 
+reverse() =>number reverse 
+pallindrome() =>logic pallindrome logic 
+prime() =>prime number logic 
+check() =>even ya odd number 
+factorial() =>factorial code 
+fibonacci() =>fibonacci 
+armstrong() =>armstrong code 
+gender() =>m =>male
+		f =female 
+ 		m /f k alava other 
