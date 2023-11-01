@@ -1,0 +1,214 @@
+1)
+class A :
+show1()
+
+class B 
+show2() 
+
+child k through parent ko access krna hey 
+#include <iostream>
+using namespace std;
+ 
+class A {
+public:
+    void show1() {
+        cout << "This is show1() in class A." << endl;
+    }
+};
+
+
+class B : public A {
+public:
+    void show2() {
+        cout << "This is show2() in class B." << endl;
+    }
+};
+
+int main() {
+    B obj; 
+
+    obj.show1(); 
+    obj.show2(); 
+
+    return 0;
+}
+---------------------------------------------------------------------------
+2)class A 
+show1() =>add no return and no argument 
+show2()=>add no return and argument 
+
+class B 
+show3()=>add return and argument 
+show4()=>add return and no argument 
+
+child k through  all functions ko access krna hey 
+#include <iostream>
+using namespace std;
+
+
+class A {
+public:
+    void show1() {
+        cout << "This is show1() in class A." << endl;
+    }
+
+    void show2(int arg) {
+        cout << "This is show2() in class A with argument: " << arg << endl;
+    }
+};
+
+
+class B : public A {
+public:
+    int show3(int arg) {
+        cout << "This is show3() in class B with argument: " << arg << endl;
+        return arg * 2;
+    }
+
+    int show4() {
+ cout << "This is show4() in class B." << endl;
+        return 42;
+    }
+};
+
+int main() {
+    B obj; 
+
+    obj.show1();         
+    obj.show2(10);       
+    int result = obj.show3(5); 
+    int result2 = obj.show4();  
+
+    cout << "Result from show3(): " << result << endl;
+    cout << "Result from show4(): " << result2 << endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------
+class A instance variable a,b
+
+
+class B
+instance varaible c,d 
+show() a+b+c+d 
+show1() a*b*c*d 
+show3() a+b*c+d
+
+child k through access krogey 
+#include <iostream>
+using namespace std;
+class A {
+public:
+    int a;
+    int b;
+
+    A() {
+        a = 0;
+        b = 0;
+    }
+};
+
+class B {
+public:
+    int c;
+    int d;
+
+    B() {
+        c = 0;
+        d = 0;
+    }
+};
+
+class Child : public A, public B {
+public:
+    void show() {
+        int sum = a + b + c + d;
+        cout << "show() Result: " << sum << endl;
+    }
+
+    void show1() {
+        int product = a * b * c * d;
+        cout << "show1() Result: " << product << endl;
+    }
+
+    void show3() {
+        int result = a + (b * c) + d;
+        cout << "show3() Result: " << result << endl;
+    }
+};
+
+int main() {
+    Child obj;
+
+    obj.a = 10;
+    obj.b = 5;
+    obj.c = 3;
+    obj.d = 2;
+
+    obj.show();
+    obj.show1(); 
+    obj.show3();
+
+    return 0;
+}
+
+
+
+
+
+-------------------------------------------------------------------------
+
+--------------------------------
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a;
+    int b;
+
+    A() {
+        a = 0;
+        b = 0;
+        cout << "Hello from constructor A" <<endl;
+    }
+
+    void function1() {
+        cout << "This is function1() in class A" << endl;
+    }
+
+    void function2() {
+        cout << "This is function2() in class A" << endl;
+    }
+};
+
+class B : public A {
+public:
+    int c;
+    int d;
+
+    B() {
+        c = 0;
+        d = 0;
+        cout << "Hello from constructor B " << a + b + c + d << endl;
+    }
+
+    void function3() {
+        cout << "This is function3() in class B " << a + b + c + d << endl;
+    }
+
+    void function4() {
+        cout << "This is function4() in class B, hiii" << endl;
+    }
+};
+
+int main() {
+    B obj; 
+
+    obj.function1(); 
+    obj.function2(); 
+    obj.function3(); 
+    obj.function4();
+
+    return 0;
+}
