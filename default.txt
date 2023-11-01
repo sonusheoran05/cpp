@@ -1,0 +1,142 @@
+#include<iostream>
+using namespace std;
+class Employee
+{
+    public:
+    Employee()
+    {
+        int empid;
+        char a;
+        cout<<"Enter employee id ";
+        cin>>empid;
+        cout<<"enter employee name ";
+        cin>>a;
+        cout<<"Employee id "<<empid<<endl;
+        cout<<"Employee name "<<a;
+    }
+};
+int main()
+{
+    Employee obj;
+    return 0;
+}
+------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Add
+{
+    public:
+    Add()
+    {
+        int a,b,c;
+        
+        cout<<"Enter ist number ";
+        cin>>a;
+        cout<<"enter second number ";
+        cin>>b;
+        c=a+b;
+        cout<<"sum of two number "<<c;
+        
+    }
+};
+int main()
+{
+    Add obj;
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Sub
+{
+    public:
+    Sub()
+    {
+        int a,b,c;
+        
+        cout<<"Enter ist number ";
+        cin>>a;
+        cout<<"enter second number ";
+        cin>>b;
+        c=a-b;
+        cout<<"sub of two number "<<c;
+        
+    }
+};
+int main()
+{
+    Sub obj;
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Mul
+{
+    public:
+    Mul()
+    {
+        int a,b,c;
+        
+        cout<<"Enter ist number ";
+        cin>>a;
+        cout<<"enter second number ";
+        cin>>b;
+        c=a-b;
+        cout<<"Mul of two number "<<c;
+        
+    }
+};
+int main()
+{
+    Mul obj;
+    return 0;
+}
+---------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Divide
+{
+    public:
+        Divide()
+    {
+        int a,b,c;
+        
+        cout<<"Enter ist number ";
+        cin>>a;
+        cout<<"enter second number ";
+        cin>>b;
+        c=a/b;
+        cout<<"division  of two number "<<c;
+        
+    }
+};
+int main()
+{
+    Divide obj;
+    return 0;
+}-------------------------------------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Mod
+{
+    public:
+        Mod()
+    {
+        int a,b,c;
+        
+        cout<<"Enter ist number ";
+        cin>>a;
+        cout<<"enter second number ";
+        cin>>b;
+        c=a%b;
+        cout<<"modular  of two number "<<c;
+        
+    }
+};
+int main()
+{
+    Mod obj;
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------

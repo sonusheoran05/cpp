@@ -1,0 +1,286 @@
+class A 
+int a,b 
+A() ab 
+function no return and no argument (a+b)
+
+main()
+acccess
+
+user input 
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a, b;
+
+    A() {
+        a = 0;
+        b = 0;
+    }
+
+    void sum of a () and b(); {
+        int result = a + b;
+        cout << "The sum of a and b is: " << result << endl;
+    }
+};
+
+int main() {
+    A obj;
+    cout << "Enter the value for a: ";
+    cin >> obj.a;
+    cout << "Enter the value for b: ";
+    cin >> obj.b;
+    obj.sum of a and b();
+
+    return 0;
+}
+-----------------------------------------------------------------------------------------------
+
+2)class A
+int a,b 
+A() a b 
+function no return and argument c d 
+a+b+c+d => addition 
+
+user input 
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class A {
+private:
+    int a, b;
+
+public:
+    A() {
+        a = 0;
+        b = 0;
+    }
+
+    void setA(int aValue) {
+        a = aValue;
+    }
+
+    void setB(int bValue) {
+        b = bValue;
+    }
+
+
+        return a;
+    }
+
+    
+        return b;
+    }
+
+    void sum_of_a_and_b() {
+        int result = a + b;
+        cout << "The sum of a and b is: " << result << endl;
+    }
+};
+
+int main() {
+    A obj;
+    int a, b;
+
+    cout << "Enter the value for a: ";
+    cin >> a;
+    obj.setA(a);
+
+    cout << "Enter the value for b: ";
+    cin >> b;
+    obj.setB(b);
+
+    obj.sum_of_a_and_b();
+
+    return 0;
+}
+----------------------------------------------------------------------
+lass A
+int a,b 
+A() a b 
+function  return and no argument 
+a+b+c+d => addition 
+
+user input 
+
+
+3)#include <iostream>
+using namespace std;
+class A {
+public:
+    int a, b;
+
+    A(int aValue, int bValue) {
+        a = aValue;
+        b = bValue;
+    }
+
+    int addition(int c, int d) {
+        int result = a + b + c + d;
+        return result;
+    }
+};
+
+int main() {
+    int aValue, bValue, cValue, dValue;
+
+    cout << "Enter the value for a: ";
+    cin >> aValue;
+    cout << "Enter the value for b: ";
+    cin >> bValue;
+    cout << "Enter the value for c: ";
+    cin >> cValue;
+    cout << "Enter the value for d: ";
+    cin >> dValue;
+
+    A obj(aValue, bValue);
+
+    int sum = obj.addition(cValue, dValue);
+
+    cout << "The sum of a, b, c, and d is: " << sum << endl;
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+4)class A
+int a,b 
+A() a b 
+function  return and argument c d 
+a+b+c+d => addition 
+
+user input 
+--------------
+#include <iostream>
+using namespace std;
+class A {
+public:
+    int a, b;
+
+    A(int aValue, int bValue) {
+        a = aValue;
+        b = bValue;
+    }
+
+    int addition(int c, int d) {
+        int result = a + b + c + d;
+        return result;
+    }
+};
+
+int main() {
+    int aValue, bValue, cValue, dValue;
+
+    cout << "Enter the value for a: ";
+    cin >> aValue;
+    cout << "Enter the value for b: ";
+    cin >> bValue;
+    cout << "Enter the value for c: ";
+    cin >> cValue;
+    cout << "Enter the value for d: ";
+    cin >> dValue;
+
+    A obj(aValue, bValue);
+
+    int sum = obj.addition(cValue, dValue);
+
+    cout << "The sum of a, b, c, and d is: " << sum <<endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------------
+class A 
+int a,b,c,d 
+A(int e,int f) parameter 
+a=e;
+
+function1() no return and no argument add
+
+function2()no return and  argument add
+
+function3()return and no argument add
+
+function4() return and  argument add
+
+user input 
+
+
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a, b, c, d;
+
+    A(int e, int f) {
+        a = e;
+        b = f;
+        c = 0;
+        d = 0;
+    }
+
+    void function1() {
+        int sum = a + b + c + d;
+        cout << "Function1 - The sum is: " << sum << endl;
+    }
+
+    void function2(int e, int f) {
+        int sum = a + b + e + f;
+        cout << "Function2 - The sum is: " << sum <<endl;
+    }
+
+    int function3() {
+        int sum = a + b + c + d;
+        return sum;
+    }
+
+    int function4(int e, int f) {
+        int sum = a + b + e + f;
+        return sum;
+    }
+};
+
+int main() {
+    int aValue, bValue, cValue, dValue;
+
+    cout << "Enter the value for a: ";
+    cin >> aValue;
+    cout << "Enter the value for b: ";
+    cin >> bValue;
+    
+    A obj(aValue, bValue);
+
+    cout << "Enter the value for c: ";
+    cin >> cValue;
+    cout << "Enter the value for d: ";
+    cin >> dValue;
+    
+    obj.c = cValue;
+    obj.d = dValue;
+
+    obj.function1();
+    
+    int eValue, fValue;
+    cout << "Enter the value for e: ";
+    cin >> eValue;
+    cout << "Enter the value for f: ";
+    cin >> fValue;
+
+    obj.function2(eValue, fValue);
+
+    int result1 = obj.function3();
+    int result2 = obj.function4(eValue, fValue);
+
+    cout << "Function3 - The result is: " << result1 << endl;
+    cout << "Function4 - The result is: " << result2 << endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------
+------------------------------------------------------------------------------
+----------------------------------------------------
