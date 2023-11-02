@@ -1,0 +1,677 @@
+1)eirarichal 
+class A 
+void show() hello 
+
+class B :A
+void show1() hiii
+
+class C :A
+
+bye 
+
+main 
+B C 
+-----------------------------------------------------------
+class A
+function :addd
+
+B:A 
+function :sub
+
+
+C:A
+function :multi
+
+D :A
+function :div
+
+main()
+B C D
+----------------------------------------------------------
+class A
+function :addd no return and no argument 
+
+B:A 
+function :sub no return and argument 
+
+
+
+C:A
+function :multi  return and no argument 
+
+
+D :A
+function :div return and argument 
+
+
+main()
+B C D
+
+----------------------------
+instance variable 
+class A
+function :addd no return and no argument 
+
+B:A 
+function :sub no return and argument 
+
+
+
+C:A
+function :multi  return and no argument 
+
+
+D :A
+function :div return and argument 
+
+
+main()
+B C D
+---------
+instance variable :parameterised constructor 
+class A
+function :addd no return and no argument 
+
+B:A 
+function :sub no return and argument 
+
+
+
+C:A
+function :multi  return and no argument 
+
+
+D :A
+function :div return and argument 
+
+
+main()
+B C D
+-----------------------------------------------------
+*************************************************************************************************************
+			HYBRID 
+1) 
+A 
+hello
+
+B 
+hii
+
+C 
+bye
+
+D
+how r u 
+-----------------------------------------------------
+A 
+function add
+
+B
+function sub
+
+C
+function div
+
+D
+function mul
+main()
+ 
+--------------------------------------------------------------------
+A 
+function add :no return and no argument 
+
+B
+function sub:no return and  argument 
+
+C
+function div: return and no argument 
+
+D
+function mul: return and argument 
+main()
+-----------------------------------------------------------------------------------------------------
+instance varaible : 
+
+
+A 
+function add :no return and no argument 
+
+B
+function sub:no return and  argument 
+
+C
+function div: return and no argument 
+
+D
+function mul: return and argument 
+main()
+-----------------------------------------------------------------------------------------------------
+instance varaible +paramteriesd constructor 
+A 
+function add :no return and no argument 
+
+B
+function sub:no return and  argument 
+
+C
+function div: return and no argument 
+
+D
+function mul: return and argument 
+main()
+-----------------------------------------------------------------------------------------------------
+instance varaible +default constructor 
+A 
+function add :no return and no argument 
+
+B
+function sub:no return and  argument 
+
+C
+function div: return and no argument 
+
+D
+function mul: return and argument 
+main()
+-----------------------------------------------------------------------------------------------------
+user input 
+*****************************************
+1)number swap 
+2)odd even 
+3)voter id 
+4)armstrong 
+5)pallindrome 
+6)factorial 
+7)fibonacci
+8)perfect number 
+9)neon number 
+10)leap year 
+--------
+destructor : 
+class name destructor name same 
+symbol:tilde ~ 
+destructor deallocate 	
+#include<iostream>
+using namespace std;
+class A{
+    public :
+    A(){
+        cout<<"constructor calll";
+    }
+    ~A(){
+        cout<<"destructor call";
+    }
+};
+int main()
+{
+    A k=A();   return 0;
+}
+
+
+
+prime number
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+  int n, i, m=0, flag=0;  
+  cout << "Enter the Number to check Prime: ";  
+  cin >> n;  
+  m=n/2;  
+  for(i = 2; i <= m; i++)  
+  {  
+      if(n % i == 0)  
+      {  
+          cout<<"Number is not Prime."<<endl;  
+          flag=1;  
+          break;  
+      }  
+  }  
+  if (flag==0)  
+      cout << "Number is Prime."<<endl;  
+  return 0;  
+}  
+--------------------------------------------------------------
+------------------------------------------------------------
+2)pallindrome ---
+
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+  int n,r,sum=0,temp;    
+  cout<<"Enter the Number=";    
+  cin>>n;    
+ temp=n;    
+ while(n>0)    
+{    
+ r=n%10;    
+ sum=(sum*10)+r;    
+ n=n/10;    
+}    
+if(temp==sum)    
+cout<<"Number is Palindrome.";    
+else    
+cout<<"Number is not Palindrome.";   
+  return 0;  
+}  -----------------------
+--------------------------------------------------------
+------------------------------------------------
+3)factorial 
+
+include <iostream>  
+using namespace std;  
+int main()  
+{  
+   int i,fact=1,number;    
+  cout<<"Enter any Number: ";    
+ cin>>number;    
+  for(i=1;i<=number;i++){    
+      fact=fact*i;    
+  }    
+  cout<<"Factorial of " <<number<<" is: "<<fact<<endl;  
+  return 0;  
+----------------------------------------
+4)armstrong number
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int n,r,sum=0,temp;    
+cout<<"Enter the Number=  ";    
+cin>>n;    
+temp=n;    
+while(n>0)    
+{    
+r=n%10;    
+sum=sum+(r*r*r);    
+n=n/10;    
+}    
+if(temp==sum)    
+cout<<"Armstrong Number."<<endl;    
+else    
+cout<<"Not Armstrong Number."<<endl;   
+return 0;  
+}  
+-----------------------
+-------------------------------------------------------------------
+5)reverse number
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int n, reverse=0, rem;    
+cout<<"Enter a number: ";    
+cin>>n;    
+  while(n!=0)    
+  {    
+     rem=n%10;      
+     reverse=reverse*10+rem;    
+     n/=10;    
+  }    
+ cout<<"Reversed Number: "<<reverse<<endl;     
+return 0;  
+}  ----------------------------
+-------------------------------------------------------------------------
+swap number---
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int a=5, b=10;      
+cout<<"Before swap a= "<<a<<" b= "<<b<<endl;      
+a=a*b; //a=50 (5*10)    
+b=a/b; //b=5 (50/10)    
+a=a/b; //a=10 (50/5)    
+cout<<"After swap a= "<<a<<" b= "<<b<<endl;      
+return 0;  
+---------------------------
+---------------------------
+second method for swapping---
+------
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int a=5, b=10;      
+cout<<"Before swap a= "<<a<<" b= "<<b<<endl;      
+a=a+b; //a=15 (5+10)    
+b=a-b; //b=5 (15-10)    
+a=a-b; //a=10 (15-5)    
+cout<<"After swap a= "<<a<<" b= "<<b<<endl;      
+return 0;  
+}  
+-----------------------------------------------------
+------------------------------------------------------------
+#include<iostream>
+using namespace std;
+class Q{
+	public:
+		void hello()
+		{
+			cout<<"hello"<<endl;
+		}
+};
+class R:public Q{
+	public:
+		void hiii()
+		{
+			cout<<"hiii"<<endl;
+		}
+};
+class T:public Q{
+	public:
+		void bye()
+		{
+			cout<<"bye"<<endl;
+		}
+};
+int main()
+{
+	R s;
+	s.hello();
+	s.hiii();
+	T l;
+	l.bye();
+	return 0;
+}
+_________________________________________________________________________________
+#include<iostream>
+using namespace std;
+class A{
+	public:
+		float a=78;
+		float b=69;
+		void add()
+		{
+			int c=a+b;
+			cout<<c<<endl;
+		}
+};
+class B:public A{
+	public:
+		void subt()
+		{
+			int d=a-b;
+			cout<<d<<endl;
+		}
+};
+class C:public A{
+	public:
+		void mult()
+		{
+			int e=a*b;
+			cout<<e<<endl;
+		}
+};
+class D:public A{
+	public:
+		void div()
+		{
+			float f=a/b;
+			cout<<f;
+		}
+};
+int main()
+{
+	B h;
+	h.add();
+	h.subt();
+	C i;
+	i.mult();
+	D j;
+	j.div();
+	return 0;
+}
+______________________________________________________________________________
+#include<iostream>
+using namespace std;
+class A{
+	public:
+		void hello()
+		{
+			cout<<"Hello"<<endl;
+		}
+};
+class B:public A{
+	public:
+		void hi()
+		{
+			cout<<"hii"<<endl;
+		}
+};
+class C{
+	public:
+		void bye()
+		{
+			cout<<"Bye"<<endl;
+		}
+};
+class D:public B,public C{
+	public:
+		void how()
+		{
+			cout<<"How are you";
+		}
+};
+int main()
+{
+	D s;
+	s.hello();
+	s.hi();
+	s.bye();
+	s.how();
+	return 0;
+}
+_____________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"a";
+	cin>>a;
+	if(a==1)
+	{
+		int e=5;
+		int f=4;
+		int g=7;
+		g=e*f;
+		f=g*g;
+		e=f*g-f;
+		cout<<e<<endl<<f<<endl<<g<<endl;
+	}
+	if(a==2)
+	{
+		int i=10;
+		int j=12;
+		int k=11;
+		k=j+i;
+		i=k*j;
+		j=i-k;
+		cout<<i<<endl<<j<<endl<<k;
+	}
+	return 0;
+}
+______________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"a";
+	cin>>a;
+	if(a%2==0)
+	{
+		cout<<"even";
+	}
+	else{
+		cout<<"odd";
+	}
+	return 0;
+}
+___________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int q;
+	cout<<"q";
+	cin>>q;
+	if(q>=16)
+	{
+		cout<<"valid";
+	}
+	else{
+		cout<<"not valid";
+	}
+	return 0;
+}
+____________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=13,b,c=0;
+	int temp=a;
+	while(a>0)
+	{
+		b=a%10;
+		c=c+b*b*b;
+		a=a/10;
+	}
+	if(c==temp)
+	{
+		cout<<"Armstrong";
+	}
+	else{
+		cout<<"Non Armstrong";
+	}
+	return 0;
+}
+__________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=13231,b,c=0;
+	int temp=a;
+	while(a>0)
+	{
+		b=a%10;
+		c=c*10+b;
+		a=a/10;
+	}
+	if(c==temp)
+	{
+		cout<<"Pall";
+	}
+	else{
+		cout<<"Non Pall";
+	}
+	return 0;
+}
+__________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"a";
+	cin>>a;
+	int b=1;
+	int c=1;
+	while(a>=c)
+	{
+b=b*c;
+		c++;
+	}
+	cout<<b;
+	return 0;
+}
+_________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"a";
+	cin>>a;
+	int b,c=1,d=3;
+	while(a>0)
+	{
+		b=c+d;
+		c=d;
+		d=b;
+		cout<<b;
+     	a--;
+	}
+
+	return 0;
+}
+_________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=8,b=1,c=0;
+	while(a>b)
+	{
+		if(a%b==0)
+		{
+			c=b+c;
+		}
+		b++;
+	}
+	if(c==a)
+	{
+		cout<<"perfect no";
+	}
+	else{
+		cout<<"not perfect no";
+	}
+	return 0;
+}
+________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=7,b,c=0,d;
+	b=a*a;
+	while(b>0)
+	{
+		d=b%10;
+		c=c+d;
+		b=b/10;
+	}
+	if(c==a)
+	{
+		cout<<"neon no";
+	}
+	else{
+		cout<<"non neon no";
+	}
+	return 0;
+}
+_________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout<<"enter year";
+	cin>>a;
+	if(a%4==0)
+	{
+		cout<<"leap year";
+	}
+	else{
+cout<<"non leap year";
+	}
+	return 0;
+}
+________________________________
+
