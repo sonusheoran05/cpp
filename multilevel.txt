@@ -1,0 +1,225 @@
+1)
+class A
+function () =>hello 
+class B
+function2() =>hiii
+class C 
+function3() =>byeee
+
+#include <iostream>
+using namespace std;
+
+
+class A {
+public:
+    void function() {
+    cout << "Hello" << endl;
+    }
+};
+
+
+class B : public A {
+public:
+    void function2() {
+    cout << "Hiii" << endl;
+    }
+};
+
+
+class C : public B {
+public:
+    void function3() {
+        std::cout << "Byeee" << std::endl;
+    }
+};
+
+int main() {
+    C objC;
+    objC.function();   
+    objC.function2();  
+    objC.function3();  
+
+    return 0;
+}
+---------------------------------------------------------------
+----------------------------------------------------------------------
+2)2)
+class A 
+int a
+class B
+b
+class C
+c
+a+b+c 
+
+
+
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a;
+
+    A(int aValue) : a(aValue) {}
+};
+
+
+class B : public A {
+public:
+    int b;
+
+    B(int bValue, int aValue) : A(aValue), b(bValue) {}
+};
+class C : public B {
+public:
+    int c;
+
+    C(int cValue, int bValue, int aValue) : B(bValue, aValue), c(cValue) {}
+
+    int calculateSum() {
+        return a + b + c;
+    }
+};
+
+int main() {
+    C objC(5, 10, 15);
+
+    int result = objC.calculateSum();
+    cout << "Result: " << result << endl;
+
+    return 0;
+}
+-------------------------------------------------
+-----------------------------------------------------
+)
+A 
+6
+B
+7
+C
+8
+D
+9
+E
+all sum 
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int a;
+
+    A(int aValue) : a(aValue) {}
+};
+
+
+class B : public A {
+public:
+    int b;
+
+    B(int bValue, int aValue) : A(aValue), b(bValue) {}
+};
+
+
+class C : public B {
+public:
+    int c;
+
+    C(int cValue, int bValue, int aValue) : B(bValue, aValue), c(cValue) {}
+};
+
+
+class D : public C {
+public:
+    int d;
+
+    D(int dValue, int cValue, int bValue, int aValue) : C(cValue, bValue, aValue), d(dValue) {}
+};
+
+
+class E : public D {
+public:
+    int e;
+
+    E(int eValue, int dValue, int cValue, int bValue, int aValue) : D(dValue, cValue, bValue, aValue), e(eValue) {}
+
+    int calculateSum() {
+        return a + b + c + d + e;
+    }
+};
+
+int main() {
+    E objE(9, 8, 7, 6, 5);
+
+    int result = objE.calculateSum();
+    cout << "Result: " << result << endl;
+
+    return 0;
+}
+-----------------------------------------------------------------
+-------------------------------------------------------------------------------
+4)
+A 
+ins a
+constructor a
+
+B class constructor b (a+b)
+
+C constructor c (a+b+c)
+
+D constructor 
+
+#include <iostream>
+using namespace std;
+class A {
+public:
+    int a;
+
+    A(int aValue) : a(aValue) {
+        cout << "Constructor A: a = " << a << endl;
+    }
+};
+
+
+class B : public A {
+public:
+    int b;
+
+    B(int aValue, int bValue) : A(aValue), b(bValue) {
+        cout << "Constructor B: a + b = " << (a + b) << endl;
+    }
+};
+
+class C : public B {
+public:
+    int c;
+
+    C(int aValue, int bValue, int cValue) : B(aValue, bValue), c(cValue) {
+        cout << "Constructor C: a + b + c = " << (a + b + c) << endl;
+    }
+};
+
+
+class D : public C {
+public:
+    D(int aValue, int bValue, int cValue, int dValue) : C(aValue, bValue, cValue) {
+        cout << "Constructor D" <<endl;
+    }
+};
+
+int main() {
+    D objD(1, 2, 3, 4);
+
+    return 0;
+}
+------------------------------------------------------
+-----------------------------------
+------------------
+-----------
+--
+----
