@@ -1,0 +1,80 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int carNumber;
+
+    
+    cout << "Enter the car no:";
+    cin >> carNumber;
+
+    
+    if (carNumber >= 1000 && carNumber <= 9999) {
+        
+        int sum = 0;
+        int temp = carNumber;
+
+        while (temp > 0) {
+            sum = temp % 10;
+            temp = 10;
+        }
+
+        
+        if (sum % 3 == 0 || sum % 5 == 0 || sum % 7 == 0) {
+            cout << "Lucky Number" << endl;
+        } else {
+            cout << "Sorry its not my lucky number" << endl;
+        }
+    } else {
+        cout << carNumber << " is not a valid car number" << endl;
+    }
+
+    return 0;
+}
+
+
+-------------------------------------------------------
+---------------------------------------------------------------------------------------
+2)#include <iostream>
+using namespace std;
+
+class IncrementCalculation {
+public:
+    static void calculateIncrement(double salary, double rating) {
+        if (salary <= 0 || rating < 1 || rating > 5) {
+            cout << "Invalid Input" << endl;
+        } else {
+            double increment;
+
+            if (rating >= 1 && rating <= 3) {
+                increment = 0.1 * salary;
+            } else if (rating > 3 && rating <= 4) {
+                increment = 0.25 * salary;
+            } else if (rating > 4 && rating <= 5) {
+                increment = 0.3 * salary;
+            } else {
+                cout << "Invalid Input" << endl;
+                return;
+            }
+
+            double newSalary = salary + increment;
+            cout << newSalary << endl;
+        }
+    }
+};
+
+int main() {
+    double salary, rating;
+
+    cout << "Enter the salary" << endl;
+    cin >> salary;
+
+    cout << "Enter the Performance appraisal rating" << endl;
+    cin >> rating;
+
+    IncrementCalculation::calculateIncrement(salary, rating);
+
+    return 0;
+}
+----------------------------------------------------
+---------------------------------------------------------------------------
