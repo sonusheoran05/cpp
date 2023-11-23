@@ -1,0 +1,175 @@
+#include<iostream>
+using namespace std;
+class Vehicle{
+	public:
+		void v()
+		{
+			cout<<"Vehicle"<<endl;
+		}
+};
+class Car:public Vehicle{
+	public:
+		void c()
+		{
+			cout<<"Car Speed = 120km/h"<<endl;
+			cout<<"Color = White"<<endl;
+		}
+};
+class Bike:public Vehicle{
+	public:
+		void b()
+		{
+			cout<<" Bike  Speed = 90km/h"<<endl;
+			cout<<"Color = Black"<<endl;
+		}
+};
+int main()
+{
+	Car g;
+	g.v();
+	g.c();
+	Bike l;
+	l.b();
+	return 0;
+}
+___________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+class E{
+	public:
+		void e(){
+		
+		cout<<"Engine"<<endl;
+	}
+};
+class W{
+	public:
+		void w()
+		{
+		
+		cout<<"Wheels"<<endl;
+	}
+};
+class C:public E,public W{
+	public:
+		void c()
+		{
+		
+		cout<<"Car";
+	}
+};
+int main()
+{
+	C k;
+	k.e();
+	k.w();
+	k.c();
+	return 0;
+}
+_________________________________________________________________________________
+#include<iostream>
+using namespace std;
+class A{
+	public:
+		void e(){
+			cout<<"Animals"<<endl;
+	}
+};
+class M:public A{
+	public:
+		void w()
+		{
+			cout<<"Mammals"<<endl;
+	}
+};
+class B:public A{
+	public:
+		void c()
+		{
+				cout<<"Bird";
+	}
+};
+int main()
+{
+	M k;
+	k.e();
+	k.w();
+	B a;
+	a.c();
+	return 0;
+}
+_____________________________________________________________________________________
+#include<iostream>
+using namespace std;
+class Shape{
+	public:
+	  virtual void shape()
+		{
+			cout<<"Shape"<<endl;
+		}
+};
+class Circle{
+	public:
+		 void shape()
+		{
+			cout<<"Circle = pie*r*r"<<endl;
+		}
+};
+class R:public Shape,public Circle{
+	public:
+		void shape()
+		{
+			cout<<"Rect = l*b"<<endl;
+		}
+};
+int main()
+{
+	R*ptr,g;
+	ptr=&g;
+	ptr->shape();
+	return 0;
+}
+___________________________________________________________________________________________
+#include<iostream>
+using namespace std;
+class E{
+	public:
+	   void draw()
+		{
+			cout<<"Employee"<<endl;
+		}
+};
+class M:public E{
+	public:
+		 void m()
+		{
+			cout<<"MANAGER"<<endl;
+		}
+};
+class P:public M{
+	public:
+		void p()
+		{
+			cout<<"Project manager"<<endl;
+		}
+};
+class T:public M,public P{
+	public:
+		void f()
+		{
+			cout<<"P M and M";
+		}
+};
+int main()
+{
+    M q;
+    q.draw();
+    q.m();
+    P u;
+    u.p();
+    T e;
+    e.f();
+	return 0;
+}
+_________________________________________________________________________________________
+
